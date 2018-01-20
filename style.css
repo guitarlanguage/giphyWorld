@@ -10,3 +10,14 @@ h1 {
     font-family: 'Nunito', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
 }
+
+button {
+    width: 140px;
+    height: 50px;
+    margin: 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+form {
+    margin-top: 20px;
+}
