@@ -10,7 +10,7 @@ var topics = [
     "bird",
     "monkey",
     "chimp",
-    "Norm",
+    "Norm MacDonald",
     "Will Ferrel",
 ];
 var searchTerm = "";
