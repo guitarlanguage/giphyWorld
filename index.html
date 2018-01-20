@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Quoth the Giphy</title>
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323" rel="stylesheet">
+    <title>Giphy World</title>
+    <!-- bootstrap cdn requirments-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- bootstrap -->
@@ -12,32 +12,37 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- bootswatch -->
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323" rel="stylesheet">
+    <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+    <!-- heading -->
     <h1>Animal Comedy Giphy World!!!</h1>
-    <div class = "row">
-        <div class = "col-sm-8">
+    <!-- bootstrap row -->
+    <div class="row">
+        <!-- left side column  -->
+        <div class="col-sm-8">
             <div id="buttons">
                 <!-- add stuff here -->
             </div>
         </div>
-
-        <div class = "col-sm-4">
-
+        <!-- right side column with form -->
+        <div class="col-sm-4">
+            
             <form id="animal-form">
                 <label for="animal-input">Add an Animal!</label>
                 <input type="text" id="animal-input"></label>
-
                 <input id="addAnimal" type="submit" value="submit">
             </form>
         </div>
-    </div>
-    <div id="gifsGoHere"></div>
+    </div>  <!--end of row -->
 
+    <!-- display the giphs -->
+    <div id="gifsGoHere"></div>
+    <!-- add the script tags -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
