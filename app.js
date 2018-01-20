@@ -5,6 +5,7 @@ var authKey = "7bBdC4gBmRiNNZ24sbtPXdTF2P5OByBI";
 //variable named topics that contains an array of strings
 var topics = [
     "cat",
+    "catfish",
     "cow",
     "Mr Crabs",
     "fish",
