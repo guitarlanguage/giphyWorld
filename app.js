@@ -22,14 +22,40 @@ var arr = [];
 // the user hits the search button
 var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" +
     authKey + "&q=";
-
+//FUNCTIONS
+// function arrLoop(){
+//     console.log(arrLoop());
+//     for(var i = 0; i < topics.length; i++){
+//     var preFabBtn = $("<button>" + topics[i] + "</button>");
+//     preFabBtn.attr("data-animal", topics[i]);
+//     $("#buttons").append(preFabBtn);
+// }
+// arrLoop();
 // logic
+
+
 //==========================================
 $(document).ready(function() {
+    //==grab the value from form=======
+    $("#addAnimal").on("click", function(event) {
+        // display buttons when topics are submited to the form
+        event.preventDefault();
+        queryTerm = $("#animal-input").val().trim();
+        topics.push(queryTerm);
+        var topicButton = $("<button>" + queryTerm + "</button>");
+        topicButton.attr("data-animal", queryTerm);
+        $("#buttons").append(topicButton);
+    //==have the buttons coordinate with the giphy api========
+        console.log(topics);
+
+    });
+
     for(var i = 0; i < topics.length; i++){
+        console.log("arrayloooooopo: " + topics[i]);
         var preFabBtn = $("<button>" + topics[i] + "</button>");
         preFabBtn.attr("data-animal", topics[i]);
         $("#buttons").append(preFabBtn);
+
 
 
         $("button").on("click", function() {
@@ -55,19 +81,4 @@ $(document).ready(function() {
             });
         });
     }
-
-    //==grab the value from form=======
-    // $("#addAnimal").on("click", function(event) {
-    //     // display buttons when topics are submited to the form
-    //     event.preventDefault();
-    //     queryTerm = $("#animal-input").val().trim();
-    //     var topicButton = $("<button>" + queryTerm + "</button>");
-    //     topicButton.attr("data-animal", queryTerm);
-    //     $("#buttons").append(topicButton);
-    // //==have the buttons coordinate with the giphy api========
-
-    //
-    // });
-
-
 });
